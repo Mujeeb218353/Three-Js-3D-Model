@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>3D Animation Three.js</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="main w-full font-helvetica">
+      <nav class="w-full fixed top-0 left-0 px-10 py-3 flex justify-between">
+        <img 
+          src="https://i.redd.it/3d-rendered-the-cyberpunk-logo-using-blender-v0-khopj82wqee91.png?width=1920&format=png&auto=webp&s=f42dbd8f5c04aedb9ba9291c1ba4d679029cc1f3" 
+          alt="model" 
+          class="w-52 mix-blend-screen filter contrast-125 saturate-150"
+        >
+        <div class="flex gap-5 p-4">
+          <a href="#" class="tracking-tight text-white hover:text-blue-400 hover:text-shadow-cyan transition-all duration-300 cursor-pointer">Games</a>
+          <a href="#" class="tracking-tight text-white hover:text-blue-400 hover:text-shadow-cyan transition-all duration-300 cursor-pointer">News</a>
+          <a href="#" class="tracking-tight text-white hover:text-blue-400 hover:text-shadow-cyan transition-all duration-300 cursor-pointer">Community</a>
+          <a href="#" class="tracking-tight text-white hover:text-blue-400 hover:text-shadow-cyan transition-all duration-300 cursor-pointer">Shop</a>
+          <a href="#" class="tracking-tight text-white hover:text-blue-400 hover:text-shadow-cyan transition-all duration-300 cursor-pointer">Support</a>
+        </div>
+      </nav>
+      <div class="w-full h-[150vh] overflow-hidden">
+        <img 
+          src="https://i.redd.it/3d-rendered-the-cyberpunk-logo-using-blender-v0-khopj82wqee91.png?width=1920&format=png&auto=webp&s=f42dbd8f5c04aedb9ba9291c1ba4d679029cc1f3" 
+          alt="model" 
+          class="w-3/4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mix-blend-screen filter contrast-125 saturate-150"
+        >
+        <div class="w-[37rem] h-[37rem] bg-blue-500 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full z-[-1] blur-3xl"></div>
+        <canvas id="canvas"></canvas>
+      </div>
+      <div class="w-full h-screen relative ">
+        <div class="w-full h-96 absolute top-0 left-0 -translate-y-1/2 bg-gradient-to-b from-black to-[#000]"></div>
+      </div>
+    </div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
